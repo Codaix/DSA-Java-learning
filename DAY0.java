@@ -1,6 +1,7 @@
 package DSA_java_learning;
     // boilerplate 
-// // eihter package or import statement
+// // eihter package or import statement Pakcages only applicable when needed.
+//not every time its required to import a package
 import java.util.*;
 // // class name
 public class DAY0 {
@@ -16,5 +17,9 @@ public class DAY0 {
 }
 // it supports primitive datatype... hence its not pure object oriented.
 // if they tend to use only wrapper classes, then we can say it is pure obj oriented
-// string is a primitive .. because it has a seperate class
+// string is a primitive .. because it has a seperate class.
+
+
+
+
 
