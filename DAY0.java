@@ -14,7 +14,7 @@ public class DAY0 {
     }
     
 }
-// it supports primitiv datatype... hence its not pure object oriented.
+// it supports primitive datatype... hence its not pure object oriented.
 // if they tend to use only wrapper classes, then we can say it is pure obj oriented
 // string is a primitive .. because it has a seperate class
 
