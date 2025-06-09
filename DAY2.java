@@ -20,7 +20,7 @@ recursive methods:
 
  * steps: 
  * 1) write a base case: situation where to stop making further call
- * 2) recursive call and expect it to do its job.
+ * 2) recursive call and expect it to do its job. We assume it will solve the problem.
  * 3) our part in the condition.(interchangeable with step 2.)
  
  * 
