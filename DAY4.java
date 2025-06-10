@@ -45,9 +45,35 @@ public class DAY4 {
     arr[0] = l_num;
 
     return arr;
+}
+    //*IMPORTANT */
+    //if value of r is more than 1:
+    int[] rotatenew(int arr1[], int r1){
+        int narr[] = new int[arr1.length];
+        for(int i = 0; i<arr1.length; i++){
+            narr[(i+r1)%arr1.length] = arr1[i];
 
+        }
+        return narr;
+    }
+    /*e.g. n =5 r1 = 2;
+    narr[] = {0 0 0 0 0}
+    2%5  = 2
+    narr[2] = arr[0];
+    '
+    '
+    '
+    i= 6%5 = 1;
+    narr[1] = arr[4]
+    4%5 = 4
+    4 => 2 + 2
+         i   r1
+         
+    narr[4] = arr[2];
+*/
+  /*homework: integer array of +ve number including 0 ...
+   we need to move all zeroses at the end of the array. */
 
-  }
   
 
     public static void main(String[] args) {
