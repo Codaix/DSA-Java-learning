@@ -47,7 +47,7 @@ public class DAY4 {
     return arr;
 }
     //*IMPORTANT */
-    //if value of r is more than 1:
+    //for any value of r:
     int[] rotatenew(int arr1[], int r1){
         int narr[] = new int[arr1.length];
         for(int i = 0; i<arr1.length; i++){
@@ -68,7 +68,7 @@ public class DAY4 {
     4%5 = 4
     4 => 2 + 2
          i   r1
-         
+
     narr[4] = arr[2];
 */
   /*homework: integer array of +ve number including 0 ...
