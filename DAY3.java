@@ -81,5 +81,12 @@ public class DAY3 {
 
     }
     // Homework: return the last occurance of a character in a sequence.
+    int returnLastCharRec(String str, char c, int i){
+        //here i = str.length()-1;
+        if(i < 0||i>= str.length())return -1;
+        if(str.charAt(i) == c)return i;
+        int index = returnLastCharRec(str, c, i-1);
+        return index;
+    }
 }
 
