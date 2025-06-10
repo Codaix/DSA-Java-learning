@@ -1,13 +1,12 @@
 //in java strings are literals and it can be mutated.
 
-package DSA_java_learning;
 
 public class DAY1 {
     // methods: helps in reusabilty, readabilty and mentainability.
-    int min(int x, int y, int z){
+    int min(int x, int y){
         //two types of methods: build-in and user defined
 
-        return min(x, min(y,z));
+        return min(x, min(y,x));
         // its ussed in real case when we need to use multiple api's..
         // instead we can use method overloading.
     }
