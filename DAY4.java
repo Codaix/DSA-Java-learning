@@ -24,7 +24,7 @@ public class DAY4 {
  * Advantage: Memory management.
  * the name of array is nothing but a pointer to the first element of the array.
  * so to access next element, we do +1, +2, +3...
- * so the first elemt pointer can be shown as arr +0... hence the 0 index.
+ * so the first element pointer can be shown as arr +0... hence the 0 index.
  * 
  */
 // innitialisation:
@@ -73,7 +73,7 @@ public class DAY4 {
 */
   /*homework: integer array of +ve number including 0 ...
    we need to move all zeroses at the end of the array. */
-   
+
 
   
 
