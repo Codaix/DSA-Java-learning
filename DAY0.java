@@ -1,8 +1,7 @@
-package DSA_java_learning;
+
     // boilerplate 
 // // eihter package or import statement Pakcages only applicable when needed.
 //not every time its required to import a package
-import java.util.*;
 // // class name
 public class DAY0 {
 
