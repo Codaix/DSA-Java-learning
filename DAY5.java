@@ -1,7 +1,6 @@
 /*homework: we are given with integer array of +ve number including 0 ...
    we need to move all zeroes at the end of the array*/
 
-import java.util.Arrays;
 
 public class DAY5 {
     /*brute force:
