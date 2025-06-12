@@ -1,4 +1,4 @@
-import java.util.*;
+
 /*DAY2of method overloading:
 when we want to use multiple api's, we dont need to use different names
 api's, indtead we use same name api and use method overloading saving the 
@@ -27,7 +27,7 @@ recursive methods:
  */
 // recursive code
 //iterative:
-public class noOfDigit{
+public class DAY2{
     int returnNoOfDigit(int n){
     int c = 0;
     while(n>0){
@@ -47,7 +47,6 @@ int returnNoOfDigitRec(int n){ // here we used with the overall n's...
 
     //use our part:
     return d+1;
-}
 }
     /*que: integer value, return the sum of all the digits. answer is 4:*/
     //iterative:
@@ -93,3 +92,4 @@ int returnNoOfDigitRec(int n){ // here we used with the overall n's...
         //step2: recursive
         return returnReverseRec(n/10, rev);
     }
+}
