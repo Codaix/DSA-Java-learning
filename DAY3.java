@@ -33,18 +33,20 @@ public class DAY3 {
      */
     // iterative
     int returnFibo(int n){
+        int a = 0;
+        int b = 1;
         while(n>1){
-            int a = 0;
-            int b = 1;
+            
             for(int i = 3; i<=n; i++){
                 int c = a+b;
                 a = b;
                 b = c;
 
             }
-            return b;
+            
             
         }
+        return b;
     }
     //recursive:
     int returnFiboRec(int n){
@@ -68,7 +70,6 @@ public class DAY3 {
         }
         return -1;  // return -1 if the character is not found
     }
-}
     int returnCharRec(String str, char c, int i){
         //if(str.charAt(0)== 0)return 0; // only works if empty string
         //instead use:
