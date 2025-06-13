@@ -20,7 +20,7 @@ public class DAY6{
 }
     */
 /*keywords:static and final.
-makes the member public and independent of iniciation of the class
+makes the member public and independent of instantiation of the class
 classes: regular, nested, inner, abstract, final
 nested:- class inside a class
 - static
