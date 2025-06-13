@@ -19,9 +19,15 @@ public class DAY6{
     }
 }
     */
-/*keywords:static and final.
-makes the member public and independent of instantiation of the class
-classes: regular, nested, inner, abstract, final
+/*
+keywords:static and final.
+static: makes the member public and independent of instantiation of the class/independent of existance of the object
+        i.e. it wont be dependent on object creation rather can be directly called by class name.
+final: The final keyword in Java is a non-access modifier used to apply restrictions on classes, methods, and variables.
+       It ensures that the entity it modifies cannot be changed or extended.
+
+classes: regular, nested/inner, abstract, final
+
 nested:- class inside a class
 - static
 - non static
@@ -75,6 +81,7 @@ public static void main(String[] args) {
     lo.check();
 }
 }
+//anonymous inner class
 
 
 /*Que:
