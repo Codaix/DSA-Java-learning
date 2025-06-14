@@ -92,3 +92,7 @@ abstract class Animal{// class is imcomplete... i.e. class is abstract
    */
 public class DAY7{
 }
+/*
+ * question to ask: 
+ * difference b/w {name = this.name;} and {this.name = name;}
+ */
