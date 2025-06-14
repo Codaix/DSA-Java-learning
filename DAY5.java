@@ -31,8 +31,8 @@ public class DAY5 {
      * 
      */
     int Td []    []   =  {{1,2,3,4},
-    /*    rows columns*/  {3,4,5,6},
-                          {4,5,6,7}};
+    /*    rows columns*/  {3,0,5,6},
+                          {4,5,6,0}};
     /* Que: given a matrix where elements can be zeros and non-zeroes
      *      we need to convert entire row and column to zero if we encounter a zero
      */
@@ -42,14 +42,14 @@ public class DAY5 {
         for(int i = 0; i<arr.length; i++){
             for(int j = 0; j<arr[i].length;j++){
                 if(arr[i][j] == 0){
-                r[i] = 1;
-                c[j] = 1;
+                r[i] = -1;
+                c[j] = -1;
                 }
             }
         }
         for(int i = 0;i<arr.length;i++){
             for(int j = 0; j<arr[i].length;j++){
-                if(r[i] == 1 || c[j] ==1){
+                if(r[i] == -1 || c[j] == -1){
                 arr[i][j] = 0;
                 }
             }
