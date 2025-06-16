@@ -57,9 +57,8 @@ public class MultidimensionalArray {
         }
         return arr;
     }
-    /* homework: use this same question and rather than using different arrays, use brute force to
-     * flag the rows and column elements inside the matrix and covert it there only.
-     */
+    /* Que: homework: use this same question and rather than using different arrays, use brute force to
+     * flag the rows and column elements inside the matrix and covert it there only.*/
     int[][] convertMatrixNew(int[][] arr) {
     int rows = arr.length;
     int cols = arr[0].length;
@@ -95,5 +94,4 @@ public class MultidimensionalArray {
 
     return arr;
 }
-  
 }
