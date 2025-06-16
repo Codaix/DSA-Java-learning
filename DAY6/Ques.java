@@ -16,7 +16,6 @@ class Q4{
     }
 }
 // my solution:
-
 /*
 class Diff{
     int adjDiff(int arr[]){
