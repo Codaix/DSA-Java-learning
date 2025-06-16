@@ -8,6 +8,7 @@ package DAY7;
  * 
 */
 
+
 //Abstraction: class needs to be abstract to use sbstract keyword
 abstract class Animal{// class is imcomplete... i.e. class is abstract
     private int noOfLegs;
