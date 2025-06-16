@@ -10,7 +10,6 @@ class Animal{
 
     }
 }
-
 public class Classes{
     public static void main(String[] args) {
         Animal a = new Animal();
