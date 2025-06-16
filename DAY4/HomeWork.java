@@ -1,5 +1,4 @@
 package DAY4;
-
 public class HomeWork{
 //previous day3 homework
     // Homework: return the last occurance of a character in a sequence.
