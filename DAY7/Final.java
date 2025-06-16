@@ -9,7 +9,6 @@ final class Animal{
         System.out.println("Animal Speaks");
     }
 }
-
 // this class can be called and object can be created of this but it cannot be 
 // inherited and cannot be modified in any sense.
 /*
