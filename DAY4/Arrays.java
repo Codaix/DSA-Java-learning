@@ -59,9 +59,6 @@ public class Arrays {
   /*homework: integer array of +ve number including 0 ...
    we need to move all zeroses at the end of the array. */
 
-
-  
-
     public static void main(String[] args) {
         
     }
