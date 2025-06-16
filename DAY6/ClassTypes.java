@@ -9,11 +9,10 @@ final: The final keyword in Java is a non-access modifier used to apply restrict
 
 classes: regular, nested/inner, abstract, final
 
-nested:- class inside a class
-- static
-- non static
+nested: - class inside a class
+        - static
+        - non static
 */
-
 //non static:
 class A{
     int ov = 10;
