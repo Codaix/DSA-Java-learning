@@ -25,3 +25,4 @@ public class DAY1 {
     // this gives false because new keywork gives a different memory address to the str2
     }
 }
+
