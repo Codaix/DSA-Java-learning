@@ -1,13 +1,14 @@
+package DAY3;
 /* important data structure: tree, graph, Dynamic programming, try error.  
  * Hands On Practice on recursion:
  * 
  * 
- * 
+ *
  * Que: n is provided and we need to find a factorial of it.
  * e.g.: n=5 result= 5*4*3*2*1 = 120
 */
 
-public class DAY3 {
+public class MethodOverloadingQue {
     //iterative method:
     int returnFact(int n){
         int factorial = 0;

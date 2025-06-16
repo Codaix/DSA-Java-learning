@@ -1,3 +1,4 @@
+package DAY1;
 //in java strings are literals and it can be mutated.
 
 

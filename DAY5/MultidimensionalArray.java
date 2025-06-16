@@ -1,8 +1,9 @@
-/*homework: we are given with integer array of +ve number including 0 ...
+package DAY5;
+ /*homework: we are given with integer array of +ve number including 0 ...
    we need to move all zeroes at the end of the array*/
 
 
-public class DAY5 {
+public class MultidimensionalArray {
     /*brute force:
     int[] returnSovedArr(int arr[]){
         int narr[] = new int[arr.length];
@@ -94,7 +95,5 @@ public class DAY5 {
 
     return arr;
 }
-
-
-    
+  
 }

@@ -1,4 +1,4 @@
-
+package DAY2;
 /*DAY2of method overloading:
 when we want to use multiple api's, we dont need to use different names
 api's, indtead we use same name api and use method overloading saving the 
@@ -27,7 +27,7 @@ recursive methods:
  */
 // recursive code
 //iterative:
-public class DAY2{
+public class MethodOverloading{
     int returnNoOfDigit(int n){
     int c = 0;
     while(n>0){
