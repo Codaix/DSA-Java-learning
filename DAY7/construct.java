@@ -1,14 +1,14 @@
 package DAY7;
-
+/*Constructors in Java:
 //constructor: special method which is automatically provided by the class if 
 //             not defined.
-// // properties:
+//  properties:
 // Same name as class
 // no return type
 // it will be called only once in an object life time
 // i.i. at the time of object creation
 // used to initialise the class object
-
+*/
 //Types of constructors: * default/non parameterized
 //                       * parameterized
 //                       * copy constructor.
