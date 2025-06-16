@@ -1,5 +1,15 @@
 package DAY8;
-/*inheritance:types:
+/*inheritance: 
+ * it is a mechanism in which one class acquires the properties of another class.
+ * 
+ * types of inheritance:
+ * 1. single inheritance: one class inherits from another class.
+ * 2. multilevel inheritance: one class inherits from another class and that class inherits from another class.
+ * 3. hierarchical inheritance: multiple classes inherit from a single class.
+ * 4. multiple inheritance: one class inherits from multiple classes. (not supported by java)
+ * 
+ *
+types:
 single
 multilevel
 heirarcical inheritance
