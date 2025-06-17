@@ -13,6 +13,7 @@ types:
 single
 multilevel
 heirarcical inheritance
+hybrid
 multiple //not supported by java
 */
 class Animal{
