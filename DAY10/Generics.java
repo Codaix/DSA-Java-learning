@@ -18,6 +18,14 @@ class Record<E, K>{
 public class Generics {
 public static void main(String[] args) {
     Record<Integer,String> r = new Record<>();
+    r.arr = new Integer[10]; // creating an array of Integer type
+    r.arr[0] = 10; // assigning value to the array  
+    r.arr[1] = 20; // assigning value to the array
+    r.arr[2] = 30; // assigning value to the array
+    r.arr[3] = 40; // assigning value to the array 
+    r.arr[4] = 50; // assigning value to the array
+    System.out.println(r.get(0)); // getting the value at index 0   
 }
+    
     
 }
