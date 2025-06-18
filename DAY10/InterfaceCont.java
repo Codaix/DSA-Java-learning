@@ -19,9 +19,18 @@ package DAY10;
 
 public class InterfaceCont {
     int maxdiff(int arr[]){
-        int mini = 0;
-        int maxi = 0;
-        
+        int max = arr[0];
+        int min = arr[0];
+        for(int i = 1; i < arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+            if(arr[i] < min){
+                min = arr[i];
+            }
+        }
+        return max - min;
+
 
     }
 }
