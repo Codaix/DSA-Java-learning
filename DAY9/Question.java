@@ -1,7 +1,7 @@
 package DAY9;
 import java.util.*;
 //Que: we are having array with positive integers. we need to get two integers such that:
-//      1. index of first element is smaller than j (second element).
+//      1. element at i'th index is smaller than element at j (second element).
 //      2. difference between the two elements is maximum.
 // e.g. if we have array as {1, 2, 3, 4, 5}, then the output should be 1 and 5.
 class MaxDiff{
@@ -32,7 +32,11 @@ class MaxDiff{
 /* assignment: 
  * 1. any way we can reduce the time complexity of this question?
  * 2. how?
- * 
+ * solution to make the time complexity to O(n):
+ * 1. we can use two pointers, one at the start and one at the end of the array.
+ * 2. we can iterate through the array and find the maximum and minimum elements.
+ * 3. we can then return the difference between the maximum and minimum elements.
+ * 4.
  */
 
 public class Question {
