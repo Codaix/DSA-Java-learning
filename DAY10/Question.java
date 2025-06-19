@@ -32,7 +32,8 @@ class ArrAdd{
         return newarr;
     }
 }
-// this is having the problem of gt=etting number larger than 100 digits...
+
+// this is having the problem of getting number larger than 100 digits...
 // we need to handle that as well.
 
 public class Question {
