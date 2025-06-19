@@ -8,34 +8,39 @@ temp array with the ith element of original array.
 */
 import java.util.Scanner;
 
-class ArrAdd{
-    int arr[] = new int[999];
-    int temparr[] = new int[arr.length];
+import java.util.Arrays;
+
+public class Question {
     Scanner sc = new Scanner(System.in);
-    int num = sc.nextInt();
     int[] add(){
-        while(num>0){
-            int i = 0;
-            int digit = num%10;
-            temparr[i] = digit;
-            i++;
-            num = num/10;
+    String input = sc.nextLine().trim();
+    int arr[] = new int[input.length()];
+    for(int i = 0; i<input.length();i++){
+        arr[i] = input.charAt(i) - '0'; // converting char to int
+    }
+    int num = 1; // number to be added
+    for(int i = arr.length -1; i >=0; i--){
+        int sum = arr[i] + num;
+            arr[i]= sum%10;
+            num = sum/10;
         }
-        int newarr[] = new int[arr.length];
-        for(int i = 0; i < arr.length; i++){
-            if(i < temparr.length){
-                newarr[i] = arr[i] + temparr[i];
-            }else{
-                newarr[i] = arr[i];
-            }
+        if(num > 0){
+        int[] newarr = new int[arr.length +1];
+        newarr[0] = num;
+        for(int i = 0; i < arr.length;i++){
+            newarr[i+1] = arr[i];
         }
         return newarr;
     }
-}
+        return arr;
+    }
+    public static void main(String[] args) {
+        Question q = new Question();
+        int[] result = q.add();
+        System.out.println("Result: "+ Arrays.toString(result));
+    }
 
 // this is having the problem of getting number larger than 100 digits...
 // we need to handle that as well.
-
-public class Question {
     
 }
