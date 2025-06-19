@@ -3,7 +3,7 @@ import java.util.*;
 // ArrayList is a part of the collection framework in Java.
 public class ArrList {
     public static void main(String[] args) {
-        ArrayList<Integer> arr = new ArrayList<>(); // creating an ArrayList of String type
+        ArrayList<Integer> arr = new ArrayList<>(); // creating an ArrayList of Integer type
         arr.add(10);
         arr.add(20);
         arr.add(30);
