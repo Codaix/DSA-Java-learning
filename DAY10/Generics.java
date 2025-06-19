@@ -2,7 +2,12 @@ package DAY10;
 /*Generics:
  * 1. Generics is a feature in Java that allows us to create classes, 
  * interfaces, and methods with a placeholder for the type of data they operate on.
- * 2. helps to create a class which is generic in nature.
+ * 2. helps to create a class which is generic in nature. i.e. its object can hold any kind of type value.
+ * benefits:
+ * code redundandency is reduced
+ * type safety is provided
+ * saves time
+ * easy maintenance
  */
 class Record<E, K>{
     E arr[];//placeholder for the type of data
@@ -14,6 +19,7 @@ class Record<E, K>{
     //     K a;
     //     return a;
     // }
+
 }
 public class Generics {
 public static void main(String[] args) {
