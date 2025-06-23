@@ -9,8 +9,8 @@ package DAY10;
 //    why do we need arraylist and vector when we got array?
 //    solution: because of synchronization issue.
 //    synchronization issue: Vector are not synchronized, which means that they are not thread-safe.
-//    ArrayList is synchronized, which means that it is thread-safe. which in leyman means we can use vector when more than one people are using it at same time.
-// 
+//    ArrayList is synchronized, which means that it is thread-safe. which in leyman means we can use vector when more than one people are using it at same time but it is not the case with array list.
+//    
 public class Collection {
     
 }
