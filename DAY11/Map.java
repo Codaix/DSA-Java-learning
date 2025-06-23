@@ -1,6 +1,6 @@
 package DAY11;
 /* Maps are associative arrays i.e.: we get the possibility of owning the key-value pair.
- * we can use the key to get the value.
+ * we can use the key to get the value. we get make associative arrays using maps.
  * there are three types of maps in java:
  * 1. HashMap: it is unordered and unsorted. it does not maintain the order of insertion.
  * 2. LinkedHashMap: it is ordered and unsorted. it maintains the order of insertion using a doubly linked list.
