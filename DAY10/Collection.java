@@ -1,5 +1,6 @@
 package DAY10;
 //collection framework: 
+// collection interfaces: Collection, List, Set, Map
 // list set and map.
 // 1. List: It is an ordered collection of elements that allows duplicate elements.
 //    It is implemented by ArrayList, LinkedList, and Vector.
