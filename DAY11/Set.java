@@ -40,7 +40,8 @@ public class Set {
 //the size of this hashset is: 3 because it only maintains the unique values.
         System.out.println(hs.size());
         System.out.println(hs);
-        Iterator it = hs.iterator(); // creating an iterator to iterate through the elements of the HashSet
+        Iterator it = hs.iterator();// creating an iterator to iterate through the elements of the HashSet
+        
         while(it.hasNext()) { // checking if there is a next element
             System.out.println(it.next()); // printing the next element
         }
