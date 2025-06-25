@@ -26,7 +26,7 @@ class algo2{
 public class InsertionSort {
     public static void main(String[] args) {
         algo2 obj = new algo2();
-        int[] arr = {12, 11, 13, 5, 6};
+        int[] arr = {13, 12, 11, 6, 5};
         obj.insertionSort(arr);
         System.out.println("Sorted array: ");
         for (int num : arr) {
