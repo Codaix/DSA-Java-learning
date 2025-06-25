@@ -4,7 +4,7 @@ package DAY13;
 // it is an in-place sorting algorithm.
 // it is a stable sorting algorithm.
 // it has a time complexity of O(n^2) in the worst case.
-class algo{
+class algo2{
     int[] insertionSort(int arr[]){
         for(int i = 1; i<arr.length; i++){
             int key = arr[i];
@@ -25,7 +25,7 @@ class algo{
 }
 public class InsertionSort {
     public static void main(String[] args) {
-        algo obj = new algo();
+        algo2 obj = new algo2();
         int[] arr = {12, 11, 13, 5, 6};
         obj.insertionSort(arr);
         System.out.println("Sorted array: ");
