@@ -19,7 +19,6 @@ int lastOccur(int arr[], int t){
         }
         else{
             left = mid+1;
-
         }
     }
     return ans;
