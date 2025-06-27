@@ -8,7 +8,7 @@ package DAY15;
 //                                       3. Biggest time complexity a program has.
 
 // let's say we need to get a factorial n! = n*n-1*n-2*n-3*....*1
-// if we wirte an algo using looping for it, we get total time taken = nC where C is constant.
-// we ignore the C and wirte the complexity as  O(n).
+// if we write an algo using looping for it, we get total time taken = nC where C is constant.
+// we ignore the C and write the complexity as  O(n).
 // the real problem is with time complexity of recursive algo for which we need to get a recurrance relation.
 // for which master's theoram helps.
