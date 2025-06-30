@@ -5,6 +5,7 @@ package DAY17;
 //k is speed of koko eat banana. tell the minimum value of k so that 
 //koko finish banana before h completes. or the gaurd comes.
 
+
 public class que2 {
     
 }
