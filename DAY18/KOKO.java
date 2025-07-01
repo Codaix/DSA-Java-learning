@@ -21,31 +21,35 @@ public boolean kokoSpeed(long[] pile, long k, int h) {
 }
 
 public class KOKO {
-    Scanner sc= new Scanner(System.in);
-    int h = sc.nextInt();
-    public static int max = (int) 1e4;
-    long mid;
-    long pile[] = new long [max];
-    int high = max;
-    int low = 1;
-    Speed obj = new Speed();
-    
-    void process(){
-        while (high-low >= 1){
-            mid = (high + low)/2;
-            if(obj.kokoSpeed(pile, mid, h)){
-                high = (int) mid;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number of piles: ");
+        int n = sc.nextInt();
+
+        long[] pile = new long[n];
+        int maxPile = 0;
+        System.out.println("Enter the piles:");
+        for (int i = 0; i < n; i++) {
+            pile[i] = sc.nextLong();
+            maxPile = (int)Math.max(maxPile, pile[i]);
+        }
+        System.out.print("Enter number of hours (h): ");
+        int h = sc.nextInt();   
+        long low = 1;
+        long high = maxPile;
+        long mid;
+        Speed obj = new Speed();      
+        while (high - low >= 1) {
+        mid = (high + low) / 2;
+        if (obj.kokoSpeed(pile, mid, h)) { 
+            high = mid;
+            } else {
+                low = mid + 1;
             }
-            else{
-                low = (int) mid + 1;
             }
-        }
-        if(obj.kokoSpeed(pile, high, h)){
-            System.out.println("Speed =" + high);
-        }
-        else{
-            System.out.println("Speed = " + low);
-        }
-        sc.close();
-    }
+
+    System.out.println("Minimum speed = " + high);
+    sc.close();
+}
 }
