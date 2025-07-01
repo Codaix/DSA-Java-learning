@@ -23,7 +23,7 @@ public boolean kokoSpeed(long[] pile, long k, int h) {
 public class KOKO {
     Scanner sc= new Scanner(System.in);
     int h = sc.nextInt();
-    public static int max = (int) 1e9;
+    public static int max = (int) 1e4;
     long mid;
     long pile[] = new long [max];
     int high = max;
@@ -31,7 +31,7 @@ public class KOKO {
     Speed obj = new Speed();
     
     void process(){
-        while (high-low > 1){
+        while (high-low >= 1){
             mid = (high + low)/2;
             if(obj.kokoSpeed(pile, mid, h)){
                 high = (int) mid;
