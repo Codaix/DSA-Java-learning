@@ -1,3 +1,4 @@
+package DAY18;
 import java.util.*;
 
 class Speed{
