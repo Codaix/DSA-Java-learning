@@ -1,7 +1,8 @@
 package DAY19;
 import java.util.Scanner;
+import DAY19.Node;
 
-
+@SuppressWarnings("unused")
 public class LinkedListNode {
     public Node make(){
         Node head = null;
