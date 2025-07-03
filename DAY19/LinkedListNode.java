@@ -74,5 +74,31 @@ public class LinkedListNode {
         return head;
         
     }
-    
+    public void deleteLast(Node head) {
+        if (head == null) return;
+        if (head.next == null) { 
+            head = null;
+            return;
+        }
+         Node temp = head;
+        while (temp.next.next != null)
+            temp = temp.next;
+
+        temp.next = null;
+    }
+    public void deleteAtKth(Node head){
+        if (head == null) return;
+        if (head.next == null) { 
+            head = null;
+
+            return;
+        }
+        Node temp = head;
+        int k = 1; // Assuming you want to delete at the kth position, you need a variable for k
+        for(int i = 1; temp != null && i < k - 1; i++){
+            temp = temp.next;
+        }
+        if(temp == null || temp.next == null)return;
+        temp.next=temp.next.next;
+    }
 }
