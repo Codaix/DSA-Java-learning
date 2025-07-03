@@ -6,7 +6,7 @@ public boolean minWeight(long[] weights, long maxW, int days) {
     long weightCount = 0;
     int d = 1;
     for(int i = 0; i<weights.length; i++){
-            if(weightCount + weights[i] < maxW){
+            if(weightCount + weights[i] > maxW){
                 d++;
                 weightCount = weights[i];
             }
