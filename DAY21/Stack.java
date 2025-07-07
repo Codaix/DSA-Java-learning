@@ -1,7 +1,6 @@
 package DAY21;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 // abstract method of storing the elements
 public class Stack {
@@ -28,25 +27,50 @@ public class Stack {
     }
 
     //Using LinkedList
-    private LinkedList<Integer> arr2;
-    public void Stack2(){
-        arr2 = new LinkedList<>();
+    public class Stack2 {
+    private Node top;
+    private int size;
+
+    private static class Node {
+        int data;
+        Node next;
+        Node(int d, Node n) { 
+            data = d; 
+            next = n; 
+        }
     }
-    public void  EnterFirst(Integer a){
-        arr2.addFirst(a);
+
+    public Stack2() {
+        top = null;
+        size = 0;
     }
-    public int removeLast(){
-        if(arr2.size() == 0)return -1;
-        int e = arr2.get(arr2.size()-1);
-        arr2.removeLast();
-        return e;
+
+    public void push(int x) {
+        top = new Node(x, top);
+        size++;
     }
-    public int first(){
-        if(arr2.size()==0)return -1;
-        return arr2.get(arr2.size()-1);
+
+    public int remove() {
+        if (top == null) return -1;
+        int val = top.data;
+        top = top.next;
+        size--;
+        return val;
     }
-    public boolean isEmptyList(){
-        return arr2.size() == 0;
+
+    public int top() {
+        if (top == null) return -1;
+        return top.data;
     }
+
+    public int size() {
+        return size;
+    }
+
+    public boolean empty() {
+        return top == null;
+    }
+}
+
 }
 // impliment this stack class with same method as linked list
