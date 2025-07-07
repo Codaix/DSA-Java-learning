@@ -26,6 +26,8 @@ public class Stack {
     public boolean  isEmpty(){
         return arr.size() == 0;
     }
+
+    //Using LinkedList
     private LinkedList<Integer> arr2;
     public void Stack2(){
         arr2 = new LinkedList<>();
