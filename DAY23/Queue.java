@@ -1,9 +1,6 @@
 package DAY23;
 // implimenting push pop front empty and size using linked list.
 
-//importing the pre built node file;
-import java.util.*;
-
 class Node{
     public int data;
     public Node next;
