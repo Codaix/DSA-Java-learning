@@ -1,6 +1,7 @@
 package DAY23;
 // implimenting push pop front empty and size using linked list.
 
+import java.util.Stack;
 class Node{
     public int data;
     public Node next;
@@ -50,6 +51,48 @@ class MyQueue {
     }
 }
 //implement this using stack.
+
+class MyQueueStack {
+    private Stack<Integer> inStack;
+    private Stack<Integer> outStack;
+
+    public MyQueueStack() {
+        inStack = new Stack<>();
+        outStack = new Stack<>();
+    }
+
+    public void push(int x) {
+        inStack.push(x);
+    }
+
+    public int pop() {
+        if (empty()) return -1;
+        if (outStack.isEmpty()) {
+            while (!inStack.isEmpty()) {
+                outStack.push(inStack.pop());
+            }
+        }
+        return outStack.pop();
+    }
+
+    public int front() {
+        if (empty()) return -1;
+        if (outStack.isEmpty()) {
+            while (!inStack.isEmpty()) {
+                outStack.push(inStack.pop());
+            }
+        }
+        return outStack.peek();
+    }
+
+    public boolean empty() {
+        return inStack.isEmpty() && outStack.isEmpty();
+    }
+
+    public int size() {
+        return inStack.size() + outStack.size();
+    }
+}
 
 public class Queue {
         
