@@ -30,4 +30,13 @@ public class Tree {
         root.right = MakeTree();
         return root;
     }
+    void printBT(BTNode root){
+        if(root == null) return;
+        System.out.println("Node: " +  root.val);
+        while(root.left != null && root.right != null){
+            printBT(root.left);
+            printBT(root.right);
+        }
+
+    }
 }
