@@ -33,10 +33,8 @@ public class Tree {
     void printBT(BTNode root){
         if(root == null) return;
         System.out.println("Node: " +  root.val);
-        while(root.left != null && root.right != null){
-            printBT(root.left);
-            printBT(root.right);
-        }
-
+        printBT(root.left);
+        printBT(root.right);
+        return;
     }
 }
