@@ -10,7 +10,7 @@ package DAY24;
 // if we have * or / then pop out all elements from stack until we find ( and then push the current element to stack.
 import java.util.*;
 public class RevPolishNotation {
-    String RevPolishNotation(String exp){
+    String ReverseNotation(String exp){
         Stack<Character> stk = new Stack<>();
         String op = "+-*?^%";
         String ans = "";
@@ -20,6 +20,11 @@ public class RevPolishNotation {
                     if(!stk.empty() && op.indexOf(stk.peek()) != -1){
                         //evaluate the precidence
                         //assignment
+                        while(!stk.isEmpty() && op.indexOf(stk.peek()) != -1 && 
+                              (op.indexOf(stk.peek()) < op.indexOf(exp.charAt(i)) || 
+                               stk.peek() == '*' || stk.peek() == '/')){
+                            ans += stk.pop();
+                        }
                     }
                     else stk.push(exp.charAt(i));
                 }
