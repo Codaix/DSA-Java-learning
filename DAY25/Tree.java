@@ -15,6 +15,8 @@ package DAY25;
 // and same for right subtree.
 // then attach the root of left subtree with the root and root of right subtree to the root.
 import java.util.ArrayList;
+import java.util.Queue;
+import java.util.LinkedList;
 import DAY25.BTNode;
 import java.util.Scanner;
 public class Tree {
@@ -30,11 +32,50 @@ public class Tree {
         root.right = MakeTree();
         return root;
     }
+    public BTNode MakeQTree(){
+        Scanner sc = new Scanner(System.in);
+        int val = sc.nextInt();
+        if( val == -1)return null;
+        BTNode root = new BTNode(val);
+        Queue<BTNode> q = new LinkedList<>();
+        q.add(root);
+        while(!q.isEmpty()){
+            BTNode f = q.poll();
+            System.out.println("Give the left and right child of "+f.val);
+            int l = sc.nextInt();
+            int r = sc.nextInt();
+            if(l != -1){
+                f.left = new BTNode(l);
+                q.add(f.left);
+            }
+            if(r != -1){
+                f.right = new BTNode(r);
+                q.add(f.right);
+            }
+
+        }
+        sc.close();
+        return root;
+
+    }
     void printBT(BTNode root){
         if(root == null) return;
+
         System.out.println("Node: " +  root.val);
-        printBT(root.left);
+
+        // making it level wise travelrsal
+        
+        if(root.left != null){
+            System.out.println("Left child of " + root.val + " is " + root.left.val);
+        } else {
+            System.out.println("Left child of " + root.val + " is null");
+        }
         printBT(root.right);
+        if(root.right != null){
+            System.out.println("Right child of " + root.val + " is " + root.right.val);
+        } else {
+            System.out.println("Right child of " + root.val + " is null");
+        }
         return;
     }
 }
