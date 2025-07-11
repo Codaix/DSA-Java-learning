@@ -3,6 +3,9 @@ package DAY26;
 import DAY25.BTNode;
 public class Que3 {
     public boolean isIdentical(BTNode root1, BTNode root2){
+        if(root1 == null && root2 == null){
+            return true;
+        }
         if(root1 == null || root2 == null){
             return false;
         }
@@ -14,6 +17,6 @@ public class Que3 {
         boolean right = isIdentical(root1.right, root2.right);
         return left && right;
     }
-    
+
     
 }
