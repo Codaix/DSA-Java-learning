@@ -19,6 +19,8 @@ import java.util.Queue;
 import java.util.LinkedList;
 import DAY25.BTNode;
 import java.util.Scanner;
+
+import DAY21.returnMid;
 public class Tree {
     public BTNode MakeTree() {
         Scanner sc = new Scanner(System.in);
@@ -81,14 +83,21 @@ public class Tree {
         Queue<BTNode> q = new LinkedList<>();
         q.add(root);    
         while(!q.isEmpty()){
+            int s = q.size();
+            for(int i = 0; i<s; i++){
             BTNode f = q.poll();
-            System.out.print(f.val + " ");
+            System.out.println("Node: " + f.val+"-");
             if(f.left != null){
+                System.out.println(f.left.val+", ");
                 q.add(f.left);
             }
             if(f.right != null){
+                System.out.println(f.right.val+", ");
                 q.add(f.right);
             }
+            System.out.println();
         }
+        }
+        return;
     }
 }
