@@ -7,6 +7,7 @@ public class QUE2 {
         int leftSum = maxPathSum(root.left);
         int rightSum = maxPathSum(root.right);
         return root.val + Math.max(leftSum, rightSum);
+        
     }
     
 }
