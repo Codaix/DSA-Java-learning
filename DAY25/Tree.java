@@ -62,9 +62,7 @@ public class Tree {
         if(root == null) return;
 
         System.out.println("Node: " +  root.val);
-
-        // making it level wise travelrsal
-        
+        printBT(root.left);     
         if(root.left != null){
             System.out.println("Left child of " + root.val + " is " + root.left.val);
         } else {
@@ -77,5 +75,20 @@ public class Tree {
             System.out.println("Right child of " + root.val + " is null");
         }
         return;
+    }
+    void printBQt(BTNode root){
+        if(root == null) return;
+        Queue<BTNode> q = new LinkedList<>();
+        q.add(root);    
+        while(!q.isEmpty()){
+            BTNode f = q.poll();
+            System.out.print(f.val + " ");
+            if(f.left != null){
+                q.add(f.left);
+            }
+            if(f.right != null){
+                q.add(f.right);
+            }
+        }
     }
 }
