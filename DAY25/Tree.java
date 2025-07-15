@@ -14,13 +14,11 @@ package DAY25;
 // ask recursion to input the left subtree and return the root of left subtree.
 // and same for right subtree.
 // then attach the root of left subtree with the root and root of right subtree to the root.
-import java.util.ArrayList;
+
 import java.util.Queue;
 import java.util.LinkedList;
-import DAY25.BTNode;
 import java.util.Scanner;
 
-import DAY21.returnMid;
 public class Tree {
     public BTNode MakeTree() {
         Scanner sc = new Scanner(System.in);
@@ -37,6 +35,7 @@ public class Tree {
     public BTNode MakeQTree(){
         Scanner sc = new Scanner(System.in);
         int val = sc.nextInt();
+        sc.close();
         if( val == -1)return null;
         BTNode root = new BTNode(val);
         Queue<BTNode> q = new LinkedList<>();
