@@ -42,18 +42,29 @@ public class Que {
     check if head = null, check it head.next is null, then use while and check untill head.next.next!=null, swap head with head.next then do head.next as null
 
      */
+    class Node{
+    public int data;
+    public Node prev;
+    Node(int data){
+        this.data = data;
+        this.prev = null;
+        
+    }
+
+}
     int deleteFirstNode(Node head){
         if(head == null) return -1;
         if(head.prev == null){
-            Node temp = head.data;
+            int temp = head.data;
             head = null;
             return temp;
         }
         Node temp = head;
-        while(temp.next.next != null){
-            temp = temp.next;
-            temp.next = null;
+        while(temp.prev.prev != null){
+            temp = temp.prev;
+            temp.prev = null;
         }
+        return head.data;
     }
 }
 
