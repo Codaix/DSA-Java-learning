@@ -11,7 +11,8 @@ package DAY29;
 
 public class Que {
         /*
-        plan 1:  take last element, move all the elements to one place up and place the last element in first
+        idea 1:  take last element, move all the elements to one place up and place the last element in first
+        idea 2: swap first and last, second and second last and so on.
          */
        static int[] reverse(int[] arr) {
         int i = 0, j = arr.length - 1;
@@ -36,6 +37,24 @@ public class Que {
     }
 
     
+    /*  
+    to delete last node of linked list:
+    check if head = null, check it head.next is null, then use while and check untill head.next.next!=null, swap head with head.next then do head.next as null
+
+     */
+    int deleteFirstNode(Node head){
+        if(head == null) return -1;
+        if(head.prev == null){
+            Node temp = head.data;
+            head = null;
+            return temp;
+        }
+        Node temp = head;
+        while(temp.next.next != null){
+            temp = temp.next;
+            temp.next = null;
+        }
+    }
 }
 
 
