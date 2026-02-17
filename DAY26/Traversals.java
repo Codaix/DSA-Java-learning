@@ -6,7 +6,7 @@ package DAY26;
 
 import DAY25.BTNode;
 public class Traversals {
-    // Inorder Traversal
+    // Inorder Traversal left -> root -> right
     public void inorder(BTNode root) {
         if (root == null) return;
         inorder(root.left);
@@ -14,7 +14,7 @@ public class Traversals {
         inorder(root.right);
     }
 
-    // Preorder Traversal
+    // Preorder Traversal Root -> left -> right
     public void preorder(BTNode root) {
         if (root == null) return;
         System.out.print(root.val + " ");
@@ -22,7 +22,7 @@ public class Traversals {
         preorder(root.right);
     }
 
-    // Postorder Traversal
+    // Postorder Traversal left -> right -> root
     public void postorder(BTNode root) {
         if (root == null) return;
         postorder(root.left);
